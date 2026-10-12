@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Равшан — AI Developer</title>
+  <meta name="description" content="Портфолио AI-разработчика: AI-приложения, веб-платформы, мобильные приложения и Telegram Mini Apps.">
+  <meta name="theme-color" content="#00050F">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="progress" aria-hidden="true"><span class="progress__bar"></span></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <a class="skip" href="#main">Перейти к содержимому</a>
+
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="logo" href="#top" aria-label="На главную">
+        <span class="logo__mark">RT</span>
+        <span class="logo__text">Равшан<span>.dev</span></span>
+      </a>
+      <nav class="nav__links" id="navLinks" aria-label="Основная навигация">
+        <a href="#about">Обо мне</a>
+        <a href="#services">Услуги</a>
+        <a href="#work">Работы</a>
+        <a href="#process">Процесс</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+      <a class="btn btn--primary btn--sm nav__cta" href="#contact">Обсудить проект</a>
+      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <canvas class="hero__canvas" id="net" aria-hidden="true"></canvas>
+      <div class="hero__aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div class="hero__grid" aria-hidden="true"></div>
+
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <p class="status reveal"><span class="status__dot"></span>Открыт для новых проектов</p>
+          <p class="hero__hello reveal" style="--d:.05s">Привет, я Равшан</p>
+          <h1 class="hero__title reveal" style="--d:.1s">
+            <span class="grad">AI Developer</span>
+          </h1>
+          <p class="hero__typed reveal" style="--d:.18s">
+            Создаю <span class="typed" id="typed" data-words="AI‑приложения|веб‑платформы|мобильные приложения|Telegram Mini Apps">AI‑приложения</span><span class="caret" aria-hidden="true"></span>
+          </p>
+          <p class="hero__lead reveal" style="--d:.26s">
+            Проектирую и разрабатываю цифровые продукты с искусственным интеллектом — от идеи и интерфейса
+            до работающего приложения в вебе, на мобильных и в Telegram.
+          </p>
+          <div class="hero__actions reveal" style="--d:.34s">
+            <a class="btn btn--primary magnetic" href="#work">
+              Смотреть работы
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn--ghost magnetic" href="#contact">Связаться</a>
+          </div>
+          <ul class="hero__meta reveal" style="--d:.42s">
+            <li><b>7</b> проектов</li>
+            <li><b>Web</b> · <b>Mobile</b> · <b>Telegram</b></li>
+            <li><b>RU</b> / <b>TJ</b> / <b>EN</b></li>
+          </ul>
+        </div>
+
+        <div class="hero__visual reveal" style="--d:.2s">
+          <div class="portrait" data-tilt>
+            <div class="portrait__ring" aria-hidden="true"></div>
+            <div class="portrait__frame">
+              <img src="assets/img/imgsport/photo_2026-10-12_15-43-04.png" alt="Равшан, AI-разработчик" width="960" height="1280" fetchpriority="high">
+            </div>
+            <div class="chip chip--a" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9L12 3zM19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8L19 15z"/></svg>
+              AI‑генерация
+            </div>
+            <div class="chip chip--b" aria-hidden="true">
+              <span class="chip__dot"></span>
+              Web · Mobile · Bots
+            </div>
+            <div class="chip chip--c" aria-hidden="true">
+              <span class="mono">&lt;/&gt;</span>
+              Идея → продукт
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a class="scroll-hint" href="#about" aria-label="Листать вниз"><span></span></a>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track" id="marquee">
+        <span>AI‑интеграции</span><i>✦</i>
+        <span>LLM‑продукты</span><i>✦</i>
+        <span>Веб‑платформы</span><i>✦</i>
+        <span>Мобильные приложения</span><i>✦</i>
+        <span>Telegram Mini Apps</span><i>✦</i>
+        <span>E‑commerce</span><i>✦</i>
+        <span>EdTech</span><i>✦</i>
+        <span>UI / UX</span><i>✦</i>
+        <span>Мультиязычность</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container about">
+        <div class="about__text">
+          <p class="eyebrow reveal">01 — Обо мне</p>
+          <h2 class="h2 reveal" style="--d:.06s">Соединяю <span class="grad">искусственный интеллект</span> и понятный продукт</h2>
+          <p class="lead reveal" style="--d:.12s">
+            Мне важно, чтобы технология решала задачу человека, а не была «AI ради AI».
+            Поэтому я делаю проект целиком: продумываю сценарии, собираю интерфейс, пишу логику
+            и довожу до состояния, когда им удобно пользоваться каждый день.
+          </p>
+          <p class="lead lead--muted reveal" style="--d:.18s">
+            В портфолио — образовательные платформы, маркетплейсы, витрины премиум‑брендов,
+            мобильные утилиты и сервисы в Telegram с интерфейсами на русском, таджикском и английском.
+          </p>
+        </div>
+        <div class="stats">
+          <div class="stat card reveal" style="--d:.1s">
+            <span class="stat__num"><b data-count="7">7</b></span>
+            <span class="stat__label">проектов в портфолио</span>
+          </div>
+          <div class="stat card reveal" style="--d:.18s">
+            <span class="stat__num"><b data-count="3">3</b></span>
+            <span class="stat__label">платформы: Web, Mobile, Telegram</span>
+          </div>
+          <div class="stat card reveal" style="--d:.26s">
+            <span class="stat__num"><b data-count="3">3</b></span>
+            <span class="stat__label">языка интерфейсов: RU, TJ, EN</span>
+          </div>
+          <div class="stat stat--wide card reveal" style="--d:.34s">
+            <span class="stat__num stat__num--text">Full‑cycle</span>
+            <span class="stat__label">от идеи и дизайна до запуска</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section" id="services">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow reveal">02 — Услуги</p>
+          <h2 class="h2 reveal" style="--d:.06s">Что я делаю</h2>
+        </header>
+        <div class="services">
+          <article class="service card spot reveal" style="--d:.05s">
+            <div class="service__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9L12 3zM19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8L19 15z"/></svg></div>
+            <h3>AI‑решения</h3>
+            <p>Встраиваю языковые модели в продукт: генерация контента и тестов из материалов, умные ассистенты, автоматизация рутины.</p>
+            <span class="service__num mono">01</span>
+          </article>
+          <article class="service card spot reveal" style="--d:.12s">
+            <div class="service__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M8 21h8M12 18v3"/></svg></div>
+            <h3>Веб‑платформы</h3>
+            <p>Маркетплейсы, каталоги, обучающие сервисы и промо‑сайты — быстрые, адаптивные, с аккуратной типографикой и анимацией.</p>
+            <span class="service__num mono">02</span>
+          </article>
+          <article class="service card spot reveal" style="--d:.19s">
+            <div class="service__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2.5"/><path d="M11 18h2"/></svg></div>
+            <h3>Мобильные приложения</h3>
+            <p>Приложения с продуманной навигацией и нативным ощущением: тренажёры, утилиты, личные кабинеты.</p>
+            <span class="service__num mono">03</span>
+          </article>
+          <article class="service card spot reveal" style="--d:.26s">
+            <div class="service__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 4L3 11l6 2.5M21 4l-3 15-9-5.5M21 4L9 13.5V19l3.2-3.4"/></svg></div>
+            <h3>Telegram Mini Apps</h3>
+            <p>Сервисы прямо внутри мессенджера: без установки, с авторизацией в один тап и привычным интерфейсом.</p>
+            <span class="service__num mono">04</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section class="section" id="work">
+      <div class="container">
+        <header class="section__head section__head--row">
+          <div>
+            <p class="eyebrow reveal">03 — Работы</p>
+            <h2 class="h2 reveal" style="--d:.06s">Избранные проекты</h2>
+          </div>
+          <div class="filters reveal" style="--d:.12s" role="group" aria-label="Фильтр проектов">
+            <button class="filter is-active" data-filter="all" aria-pressed="true">Все <sup>7</sup></button>
+            <button class="filter" data-filter="mobile" aria-pressed="false">Mobile <sup>3</sup></button>
+            <button class="filter" data-filter="web" aria-pressed="false">Web <sup>4</sup></button>
+          </div>
+        </header>
+
+        <div class="projects" id="projects">
+          <!-- Zehno -->
+          <article class="project project--mobile card spot reveal" data-type="mobile" style="--accent:#6366F1">
+            <button class="project__media" data-full="assets/img/imgsport/zehno-port.jpg" data-title="Zehno Quiz" aria-label="Открыть скриншот Zehno Quiz">
+              <span class="phone"><img src="assets/img/imgsport/zehno-port.jpg" alt="Главный экран приложения Zehno Quiz" loading="lazy" width="720" height="1437"></span>
+            </button>
+            <div class="project__body">
+              <div class="project__tags"><span class="tag tag--ai">AI</span><span class="tag">Mobile</span><span class="tag">EdTech</span></div>
+              <h3>Zehno Quiz</h3>
+              <p>Приложение для подготовки к тестам: загрузите материал или задайте тему — AI соберёт тест. Прогресс, серии дней и библиотека.</p>
+            </div>
+          </article>
+
+          <!-- Birzha truda -->
+          <article class="project project--mobile card spot reveal" data-type="mobile" style="--accent:#3B9DFF;--d:.08s">
+            <button class="project__media" data-full="assets/img/imgsport/birzhatruda-port.jpg" data-title="Биржа труда" aria-label="Открыть скриншот «Биржа труда»">
+              <span class="phone"><img src="assets/img/imgsport/birzhatruda-port.jpg" alt="Главный экран Telegram Mini App «Биржа труда»" loading="lazy" width="720" height="1474"></span>
+            </button>
+            <div class="project__body">
+              <div class="project__tags"><span class="tag">Telegram Mini App</span><span class="tag">RU / TJ</span></div>
+              <h3>Биржа труда</h3>
+              <p>Поиск работы прямо в Telegram: вакансии, резюме, отклики, чат и кабинет работодателя на двух языках.</p>
+            </div>
+          </article>
+
+          <!-- QRivo -->
+          <article class="project project--mobile card spot reveal" data-type="mobile" style="--accent:#5B5BD6;--d:.16s">
+            <button class="project__media" data-full="assets/img/imgsport/qrivo-port.jpg" data-title="QRivo" aria-label="Открыть скриншот QRivo">
+              <span class="phone phone--light"><img src="assets/img/imgsport/qrivo-port.jpg" alt="Главный экран приложения QRivo" loading="lazy" width="720" height="1451"></span>
+            </button>
+            <div class="project__body">
+              <div class="project__tags"><span class="tag">Mobile</span><span class="tag">Утилита</span></div>
+              <h3>QRivo</h3>
+              <p>Сканер и генератор QR‑кодов: мгновенное считывание ссылок и текста, создание своих кодов и история сканирований.</p>
+            </div>
+          </article>
+
+          <!-- KeyMaster -->
+          <article class="project project--web card spot reveal" data-type="web" style="--accent:#3B82F6">
+            <button class="project__media" data-full="assets/img/imgsport/keymaster-port.jpg" data-title="KeyMaster" aria-label="Открыть скриншот KeyMaster">
+              <span class="browser"><span class="browser__bar"><i></i><i></i><i></i><em>keymaster</em></span><img src="assets/img/imgsport/keymaster-port.jpg" alt="Главная страница платформы KeyMaster" loading="lazy" width="1280" height="605"></span>
+            </button>
+            <div class="project__body">
+              <div class="project__tags"><span class="tag">Web</span><span class="tag">EdTech</span><span class="tag">RU / TJ</span></div>
+              <h3>KeyMaster</h3>
+              <p>Обучающая платформа «от первого ноутбука — до мастерства клавиатуры»: курсы, практика печати, горячие клавиши и рейтинг.</p>
+            </div>
+          </article>
+
+          <!-- MarketBridge -->
+          <article class="project project--web card spot reveal" data-type="web" style="--accent:#F97316;--d:.08s">
+            <button class="project__media" data-full="assets/img/imgsport/market-port.jpg" data-title="MarketBridge" aria-label="Открыть скриншот MarketBridge">
+              <span class="browser"><span class="browser__bar"><i></i><i></i><i></i><em>marketbridge</em></span><img src="assets/img/imgsport/market-port.jpg" alt="Главная страница маркетплейса MarketBridge" loading="lazy" width="1280" height="610"></span>
+            </button>
+            <div class="project__body">
+              <div class="project__tags"><span class="tag">Web</span><span class="tag">E‑commerce</span><span class="tag">B2C / B2B</span></div>
+              <h3>MarketBridge</h3>
+              <p>Онлайн‑маркетплейс с доставкой по Таджикистану: поиск, категории, корзина и оптовый раздел для бизнеса.</p>
+            </div>
+          </article>
+
+          <!-- Luxura -->
+          <article class="project project--web card spot reveal" data-type="web" style="--accent:#C9A45C">
+            <button class="project__media" data-full="assets/img/imgsport/car-port.jpg" data-title="Luxura" aria-label="Открыть скриншот Luxura">
+              <span class="browser"><span class="browser__bar"><i></i><i></i><i></i><em>luxura</em></span><img src="assets/img/imgsport/car-port.jpg" alt="Каталог моделей на сайте Luxura" loading="lazy" width="1280" height="612"></span>
+            </button>
+            <div class="project__body">
+              <div class="project__tags"><span class="tag">Web</span><span class="tag">Premium</span><span class="tag">3D‑галерея</span></div>
+              <h3>Luxura</h3>
+              <p>Сайт премиального автосалона: каталог моделей с характеристиками, 3D‑галерея и запись на тест‑драйв.</p>
+            </div>
+          </article>
+
+          <!-- Chronos -->
+          <article class="project project--web card spot reveal" data-type="web" style="--accent:#A5A9BC;--d:.08s">
+            <button class="project__media" data-full="assets/img/imgsport/watches-portfolio.jpg" data-title="Chronos" aria-label="Открыть скриншот Chronos">
+              <span class="browser"><span class="browser__bar"><i></i><i></i><i></i><em>chronos</em></span><img src="assets/img/imgsport/watches-portfolio.jpg" alt="Каталог часов в интернет-магазине Chronos" loading="lazy" width="1280" height="606"></span>
+            </button>
+            <div class="project__body">
+              <div class="project__tags"><span class="tag">Web</span><span class="tag">E‑commerce</span><span class="tag">RU / EN</span></div>
+              <h3>Chronos</h3>
+              <p>Интернет‑магазин часов: каталог с фильтрами по коллекциям, избранное, корзина и личный кабинет.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section" id="process">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow reveal">04 — Процесс</p>
+          <h2 class="h2 reveal" style="--d:.06s">Как я работаю</h2>
+        </header>
+        <ol class="steps">
+          <li class="step reveal" style="--d:.05s">
+            <span class="step__num mono">01</span>
+            <h3>Разбор задачи</h3>
+            <p>Выясняю цель, аудиторию и сценарии. Фиксируем, что именно должно получиться на выходе.</p>
+          </li>
+          <li class="step reveal" style="--d:.12s">
+            <span class="step__num mono">02</span>
+            <h3>Прототип и дизайн</h3>
+            <p>Собираю структуру экранов и визуальный стиль, согласовываем до начала разработки.</p>
+          </li>
+          <li class="step reveal" style="--d:.19s">
+            <span class="step__num mono">03</span>
+            <h3>Разработка и AI</h3>
+            <p>Пишу интерфейс и логику, подключаю модели, показываю результат по этапам.</p>
+          </li>
+          <li class="step reveal" style="--d:.26s">
+            <span class="step__num mono">04</span>
+            <h3>Запуск и поддержка</h3>
+            <p>Тестирую, публикую и остаюсь на связи: правки, улучшения, новые функции.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section--cta" id="contact">
+      <div class="container">
+        <div class="cta reveal">
+          <div class="cta__glow" aria-hidden="true"></div>
+          <p class="eyebrow">05 — Контакты</p>
+          <h2 class="cta__title">Есть идея? <span class="grad">Давайте соберём её</span></h2>
+          <p class="cta__lead">Расскажите о задаче — отвечу и предложу, с чего начать.</p>
+          <div class="cta__actions">
+            <a class="btn btn--primary btn--lg magnetic" href="mailto:ravg578@gmail.com">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+              ravg578@gmail.com
+            </a>
+            <button class="btn btn--ghost btn--lg" id="copyMail" data-mail="ravg578@gmail.com">Скопировать почту</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a class="logo" href="#top" aria-label="Наверх">
+        <span class="logo__mark">RT</span>
+        <span class="logo__text">Равшан<span>.dev</span></span>
+      </a>
+      <p>© <span id="year">2026</span> · AI Developer</p>
+      <a class="footer__top" href="#top">Наверх ↑</a>
+    </div>
+  </footer>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Просмотр скриншота">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Закрыть">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <figure>
+      <img id="lightboxImg" src="" alt="">
+      <figcaption id="lightboxCap"></figcaption>
+    </figure>
+  </dialog>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
