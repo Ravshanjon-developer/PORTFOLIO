@@ -36,7 +36,7 @@
   addEventListener('keydown', (e) => { if (e.key === 'Escape') closeMenu(); });
 
   /* ── Active nav link ── */
-  const navLinks = $$('a', links);
+  const navLinks = [...$$('a', links), ...$$('.tabbar a')];
   const spy = new IntersectionObserver((entries) => {
     entries.forEach((en) => {
       if (!en.isIntersecting) return;
@@ -150,6 +150,7 @@
         b.classList.toggle('is-active', on);
         b.setAttribute('aria-pressed', String(on));
       });
+      $('#projects').scrollLeft = 0;
       projects.forEach((p) => {
         const show = f === 'all' || p.dataset.type === f;
         p.hidden = !show;
