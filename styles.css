@@ -351,3 +351,12 @@ svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width:
   .js .reveal { opacity: 1; transform: none; filter: none; }
   .hero__canvas, .cursor-glow { display: none; }
 }
+
+/* Project live link */
+.project__body { display: flex; flex-direction: column; align-items: flex-start; flex: 1; }
+.project__link { margin-top: auto; display: inline-flex; align-items: center; gap: 8px; height: 44px; padding: 0 18px; border-radius: 999px; font: 600 14px/1 var(--font-head); color: #fff; border: 1px solid color-mix(in srgb, var(--accent) 60%, transparent); background: color-mix(in srgb, var(--accent) 16%, transparent); transition: background .3s, transform .3s var(--ease), box-shadow .3s; }
+.project p + .project__link { margin-top: 20px; }
+.project__link svg { width: 16px; height: 16px; transition: transform .3s var(--ease); }
+.project__link:hover { background: color-mix(in srgb, var(--accent) 38%, transparent); transform: translateY(-2px); box-shadow: 0 12px 28px -12px var(--accent); }
+.project__link:hover svg { transform: translate(2px, -2px); }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
